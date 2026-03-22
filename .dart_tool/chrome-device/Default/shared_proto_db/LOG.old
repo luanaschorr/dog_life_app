@@ -1,4 +1,7 @@
-2026/03/20-21:07:17.010 3624 Reusing MANIFEST C:\Users\luana\AppData\Local\Temp\flutter_tools.95734112\flutter_tools_chrome_device.f84c4ad2\Default\shared_proto_db/MANIFEST-000001
-2026/03/20-21:07:17.011 3624 Recovering log #4
-2026/03/20-21:07:17.016 3624 Reusing old log C:\Users\luana\AppData\Local\Temp\flutter_tools.95734112\flutter_tools_chrome_device.f84c4ad2\Default\shared_proto_db/000004.log 
-2026/03/20-21:07:17.016 3624 Delete type=0 #3
+2026/03/22-20:44:30.666 2b38 Reusing MANIFEST C:\Users\luana\AppData\Local\Temp\flutter_tools.72c78119\flutter_tools_chrome_device.f85c8bf7\Default\shared_proto_db/MANIFEST-000001
+2026/03/22-20:44:30.667 2b38 Recovering log #13
+2026/03/22-20:44:30.667 2b38 Reusing old log C:\Users\luana\AppData\Local\Temp\flutter_tools.72c78119\flutter_tools_chrome_device.f85c8bf7\Default\shared_proto_db/000013.log 
+2026/03/22-20:44:30.668 2b38 Delete type=0 #3
+2026/03/22-20:44:30.668 2b38 Delete type=0 #4
+2026/03/22-20:44:30.668 2b38 Delete type=0 #7
+2026/03/22-20:44:30.668 2b38 Delete type=0 #10
