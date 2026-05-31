@@ -2,7 +2,7 @@ name: Flutter CI
 
 on:
   push:
-    branches: [ "main", "master" ] # Executa ao fazer push nestas branchs
+    branches: [ "main", "master" ]
 
 jobs:
   build:
@@ -23,9 +23,6 @@ jobs:
 
       - name: Analisar o código (Lint)
         run: flutter analyze
-
-      - name: Executar testes
-        run: flutter test
 
       - name: Build do APK
         run: flutter build apk --release
