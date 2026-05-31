@@ -9,7 +9,8 @@ void main() {
 
 class DogLifeApp extends StatelessWidget {
   const DogLifeApp({super.key});
-
+  // testando pipeline
+  // testeeeee
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
