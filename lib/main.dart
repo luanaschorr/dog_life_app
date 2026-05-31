@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'telas/login_screen.dart';
-import 'telas/add_pet.dart';
 import 'telas/home_screen.dart';
 
 void main() {

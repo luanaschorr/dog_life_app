@@ -23,18 +23,24 @@ class AddPetPage extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  TextField(
+                  const TextField(
                     decoration: InputDecoration(labelText: 'Nome do pet'),
                   ),
                   const SizedBox(height: 10),
 
-                  TextField(decoration: InputDecoration(labelText: 'Idade')),
+                  const TextField(
+                    decoration: InputDecoration(labelText: 'Idade'),
+                  ),
                   const SizedBox(height: 10),
 
-                  TextField(decoration: InputDecoration(labelText: 'Espécie')),
+                  const TextField(
+                    decoration: InputDecoration(labelText: 'Espécie'),
+                  ),
                   const SizedBox(height: 10),
 
-                  TextField(decoration: InputDecoration(labelText: 'Raça')),
+                  const TextField(
+                    decoration: InputDecoration(labelText: 'Raça'),
+                  ),
                   const SizedBox(height: 20),
 
                   ElevatedButton.icon(
@@ -43,9 +49,22 @@ class AddPetPage extends StatelessWidget {
                           .pickFiles();
 
                       if (result != null) {
-                        print(
-                          "Arquivo selecionado: ${result.files.single.name}",
+                        // Verifica se o widget ainda está na tela após o await (Boas práticas do Flutter)
+                        if (!context.mounted) return;
+
+                        // Mostra o aviso na tela para o usuário
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              "Arquivo selecionado: ${result.files.single.name}",
+                            ),
+                            behavior: SnackBarBehavior
+                                .floating, // Deixa o aviso flutuante e mais bonito
+                          ),
                         );
+
+                        // Se quiser registrar no console sem usar o print(), descomente a linha abaixo:
+                        // debugPrint("Arquivo selecionado: ${result.files.single.name}");
                       }
                     },
                     icon: const Icon(Icons.add_circle_outline),
